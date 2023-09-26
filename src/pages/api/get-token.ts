@@ -1,4 +1,4 @@
-import { get } from "@vercel/edge-config";
+// import { get } from "@vercel/edge-config";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 type ResponseData = {
