@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 type ResponseData = {
   message: string;
-  data: any;
+  challenge: any;
 };
 
 export default async function handler(
@@ -12,5 +12,5 @@ export default async function handler(
 ) {
   const body = JSON.parse(req.body);
   // const greeting = await get("greeting");
-  res.status(200).json({ message: "success", data: body.challenge });
+  res.status(200).json({ message: "success", challenge: body.challenge });
 }
