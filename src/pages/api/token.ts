@@ -11,7 +11,7 @@ export default async function handler(
   res: NextApiResponse<ResponseData>
 ) {
   try {
-    const body = JSON.parse(req.body);
+    const body = req.body;
     // const greeting = await get("greeting");
     res.status(200).json({ message: "success", challenge: body.challenge });
   } catch (error) {
